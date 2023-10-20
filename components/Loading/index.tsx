@@ -19,7 +19,7 @@ export const Loading = ({
 
       return () => clearInterval(timeOut);
     }
-  }, [time]);
+  }, [setTime, time]);
 
   return (
     <div

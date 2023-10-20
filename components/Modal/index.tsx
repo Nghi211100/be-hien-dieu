@@ -1,3 +1,4 @@
+/* eslint-disable react/display-name */
 "use client";
 
 import { Fragment } from "react";
@@ -45,7 +46,7 @@ const Modal: React.FC<IModalV2Props> = React.forwardRef(
     };
 
     useEffect(() => {
-      const handleKeyPress = (e) => {
+      const handleKeyPress = (e: any) => {
         if (e.key === "Escape") {
           onCancel(false);
         }
