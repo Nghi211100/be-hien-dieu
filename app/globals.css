@@ -25,3 +25,54 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.car {
+  animation: runCar linear 0.5s infinite;
+}
+
+@keyframes runCar {
+  0% {
+    transform: translateY(-1px);
+  }
+  25% {
+    transform: translateX(-1px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateY(1px);
+  }
+}
+
+.street {
+  animation: streetWind linear 0.4s infinite;
+}
+
+@keyframes streetWind {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-800px);
+  }
+}
+
+.css-scroll::-webkit-scrollbar {
+  width: 3px !important;
+  position: absolute;
+}
+
+.css-scroll::-webkit-scrollbar-track {
+  background: #d6d6d6;
+  border-radius: 10px;
+}
+
+.css-scroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(#ff1818, #be9bd7);
+  border-radius: 10px;
+}
