@@ -31,15 +31,16 @@ export const ModalCenter = ({
       <div className="text-red-500 w-screen md:w-[700px] h-[500px] md:h-[450px] bg-pink-100 rounded-lg p-4">
         <div className="border border-dashed border-gray-300 h-full">
           <div className="w-full h-full rotate-[-10deg] rounded-lg bg-white -z-10 absolute inset-0"></div>
-          <div className="flex w-full">
-            <div className="-ml-3 md:-ml-10 w-1/2 relative">
-              <div className="absolute inset-0 md:top-10 flex flex-col items-center justify-evenly">
+          <div className="flex w-full h-full">
+            <div className="-ml-3 md:-ml-10 w-1/2 relative h-full">
+              <div className="absolute inset-0 md:top-10 flex flex-col items-center justify-evenly h-full w-full">
                 <div className="block md:hidden">
                   <Image
                     src={"/images/avatar.png"}
                     width={100}
                     height={100}
                     alt="heart"
+                    loading="eager"
                   />
                 </div>
                 <Image
@@ -47,6 +48,7 @@ export const ModalCenter = ({
                   width={600}
                   height={600}
                   alt="heart"
+                  loading="eager"
                 />
               </div>
             </div>

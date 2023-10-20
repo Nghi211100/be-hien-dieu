@@ -25,7 +25,7 @@ export const Loading = ({
     <div
       className={classNames(
         "w-[calc(100vw-20px)] md:w-[400px] h-[40px] border-neutral-100 border-2 rounded-lg relative shadow-lg transition-all duration-300 overflow-hidden",
-        show && "translate-y-[-210px] md:translate-y-[-280px]"
+        show && "translate-y-[-210px] md:translate-y-[-300px]"
       )}
     >
       <div className="hidden md:block h-full">
