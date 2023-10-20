@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <div className="flex w-full pt-14 relative z-0">
+    <div className="flex w-full pt-2 md:pt-14 relative z-0">
       <div className="w-1/2">
         <div className="car">
           <Image src={"/images/car.png"} height={300} width={300} alt="car" />

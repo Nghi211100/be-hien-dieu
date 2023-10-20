@@ -1,6 +1,6 @@
 export const Audio = () => {
   return (
-    <div className="absolute bottom-20 md:top-10 left-10">
+    <div className="w-full pl-3">
       <p className="text-red-600 pb-1 text-xl font-bold">
         Bật nhạc nghe đã nha 💕:{" "}
       </p>{" "}

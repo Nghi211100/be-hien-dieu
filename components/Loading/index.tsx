@@ -24,18 +24,14 @@ export const Loading = ({
   return (
     <div
       className={classNames(
-        "w-[calc(100vw-20px)] md:w-[400px] h-[40px] border-neutral-100 border-2 rounded-lg relative shadow-lg transition-all duration-300",
+        "w-[calc(100vw-20px)] md:w-[400px] h-[40px] border-neutral-100 border-2 rounded-lg relative shadow-lg transition-all duration-300 overflow-hidden",
         show && "translate-y-[-210px] md:translate-y-[-280px]"
       )}
     >
       <div className="hidden md:block h-full">
         <div
           style={{ width: `calc(396px*${time}/100)` }}
-          className="bg-pink-100 h-full rounded-lg"
-        ></div>
-        <div
-          style={{ width: `calc(400px*${time}/100)` }}
-          className="absolute inset-0 h-full text-right -top-8 text-red-500 -right-2"
+          className="bg-pink-100 h-full rounded-lg justify-end flex items-center"
         >
           💞
         </div>
@@ -43,11 +39,7 @@ export const Loading = ({
       <div className="block md:hidden h-full">
         <div
           style={{ width: `calc((100vw - 20px)*${time}/100)` }}
-          className="bg-pink-100 h-full rounded-lg"
-        ></div>
-        <div
-          style={{ width: `calc((100vw - 20px)*${time}/100)` }}
-          className="absolute inset-0 h-full text-right -top-8 text-red-500 -right-2"
+          className="bg-pink-100 h-full rounded-lg justify-end flex items-center"
         >
           💞
         </div>

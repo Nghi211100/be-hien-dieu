@@ -15,8 +15,9 @@ export default function Home() {
   const [showImage, setShowImage] = useState(false);
   const [time, setTime] = useState(0);
   return (
-    <main className="flex min-h-screen overflow-hidden flex-col items-center gap-6 p-2 md:p-24 bg-[url('/images/background.jpg')] bg-no-repeat bg-cover font-mon text-xl">
+    <main className="flex h-screen overflow-hidden relative flex-col items-center gap-6 p-2 md:p-24 bg-[url('/images/background.jpg')] bg-no-repeat bg-cover font-mon text-xl">
       <Header />
+      <Audio />
       <div className="md:pt-[calc(100vh*1/6)]">
         <Loading show={showMail || showImage} time={time} setTime={setTime} />
       </div>
@@ -40,7 +41,7 @@ export default function Home() {
           Xem ảnh ở đây nè
         </button>
       </div>
-      <Audio />
+
       <ModalCenter show={showMail} setShow={setShowMail} />
       <ModalImage show={showImage} setShow={setShowImage} />
       <Footer />
