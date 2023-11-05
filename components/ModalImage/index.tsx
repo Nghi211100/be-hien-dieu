@@ -10,10 +10,13 @@ export const ModalImage = ({
   show: boolean;
   setShow: Dispatch<SetStateAction<boolean>>;
 }) => {
-  const listImage = [
-    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-    22, 23, 24,
-  ];
+  const [listImage] = useState<number[]>(() => {
+    let numb = [];
+    for (let i = 0; i < 54; i++) {
+      numb.push(i + 1);
+    }
+    return numb;
+  });
   const [showFull, setShowFull] = useState(false);
   const [imageSelected, setImageSelected] = useState("");
   return (

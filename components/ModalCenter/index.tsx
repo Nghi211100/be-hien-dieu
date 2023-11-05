@@ -10,7 +10,7 @@ export const ModalCenter = ({
   setShow: Dispatch<SetStateAction<boolean>>;
 }) => {
   const content =
-    "Gửi tới Cậu! người con gái xinh đẹp và tuyệt vời 😍. Ngày hôm nay mệt lắm có phải không? Nhưng không sao đâu nè, vẫn còn mình ở đây, mình sẽ trò chuyện với Cậu, làm Cậu vui vẻ hơn, kết thúc một ngày của Cậu với những nụ cười 😄. Mình mong Cậu luôn luôn vui vẻ và hạnh phúc 👩‍❤️‍👨, chúc Cậu có người đón đưa, kề cạnh và chăm sóc, tay phải đeo nhẫn, tay trái cầm hoa, miệng cười hồn nhiên, và chúc Cậu sớm có được mình 🤣. Mong là mình có thể đồng hành cùng Cậu tiếp những chặng đường phía trước 👫.";
+    "Gửi tới Cậu! một thiên thần nhỏ đước gửi xuống thế giới này 😍. Thời gian vừa qua mệt lắm có phải không? Nhưng không sao đâu nè, vẫn còn mình ở đây, mình sẽ trò chuyện với Cậu, làm Cậu vui vẻ hơn, kết thúc một ngày của Cậu với những nụ cười 😄. Chào mừng Cậu quay trở lại với cuộc sống hồn nhiên và đầy màu sắc này nhé. Mình mong Cậu luôn luôn vui vẻ và hạnh phúc 👩‍❤️‍👨, chúc Cậu có người đón đưa, kề cạnh và chăm sóc, tay phải đeo nhẫn, tay trái cầm hoa, miệng cười hồn nhiên, hoa sẽ vì Cậu mà e thẹn, nắng sẽ vì Cậu mà lu mờ và chúc Cậu sớm có được mình 🤣. Mong là mình có thể đồng hành cùng Cậu tiếp những chặng đường phía trước nha👫.";
 
   const [text, setText] = useState("");
   const [numb, setNumb] = useState(0);
@@ -28,7 +28,7 @@ export const ModalCenter = ({
 
   return (
     <Modal show={show} onCancel={() => setShow(false)}>
-      <div className="text-red-500 w-screen md:w-[700px] h-[500px] md:h-[450px] bg-pink-100 rounded-lg p-4">
+      <div className="text-red-500 w-screen md:w-[700px] h-[580px] md:h-[480px] bg-pink-100 rounded-lg p-4">
         <div className="border border-dashed border-gray-300 h-full">
           <div className="w-full h-full rotate-[-10deg] rounded-lg bg-white -z-10 absolute inset-0"></div>
           <div className="flex w-full h-full">

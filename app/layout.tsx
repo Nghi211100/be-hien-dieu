@@ -5,7 +5,7 @@ import "./globals.css";
 const dancing = Dancing_Script({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
-  title: "Bé Lê Hiền Diệu ( Bé Xí )",
+  title: "Bé Hồ Thị Trinh ( Bé Min ❤️ )",
   description: "Welcome to my life",
 };
 
