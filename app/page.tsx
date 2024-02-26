@@ -8,6 +8,7 @@ import { ModalCenter } from "@/components/ModalCenter";
 import { ModalImage } from "@/components/ModalImage";
 import { Name } from "@/components/Name";
 import classNames from "classnames";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
@@ -46,6 +47,9 @@ export default function Home() {
       <ModalImage show={showImage} setShow={setShowImage} />
       <Footer />
       <Name />
+      <div className="fixed inset-0 w-screen h-screen opacity-5 blur-sm">
+        <Image src={"/images/25.jpg"} layout="fill" objectFit="center" alt="" />
+      </div>
     </main>
   );
 }
