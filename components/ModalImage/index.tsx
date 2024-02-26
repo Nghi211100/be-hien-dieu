@@ -12,7 +12,7 @@ export const ModalImage = ({
 }) => {
   const [listImage] = useState<number[]>(() => {
     let numb = [];
-    for (let i = 0; i < 54; i++) {
+    for (let i = 0; i < 26; i++) {
       numb.push(i + 1);
     }
     return numb;
@@ -35,8 +35,9 @@ export const ModalImage = ({
               >
                 <Image
                   src={`/images/${image}.jpg`}
-                  width={1080}
-                  height={1440}
+                  width={400}
+                  height={700}
+                  loading="lazy"
                   alt="xinh"
                 />
               </div>

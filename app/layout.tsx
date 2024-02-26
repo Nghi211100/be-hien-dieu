@@ -5,7 +5,7 @@ import "./globals.css";
 const dancing = Dancing_Script({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
-  title: "Bé Hồ Thị Trinh ( Bé Min ❤️ )",
+  title: "Bé Út - Cục cứt của anh ❤️",
   description: "Welcome to my life",
 };
 
@@ -19,9 +19,9 @@ export default function RootLayout({
       <head>
         <link
           rel="icon"
-          href="/images/avatar.png"
+          href="/images/avatar.jpg"
           sizes="any"
-          style={{ borderRadius: 9999, overflow: "hidden" }}
+          style={{ borderRadius: "9999px", overflow: "hidden" }}
         />
       </head>
       <body className={dancing.className}>{children}</body>

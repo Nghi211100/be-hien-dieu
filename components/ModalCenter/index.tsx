@@ -10,7 +10,7 @@ export const ModalCenter = ({
   setShow: Dispatch<SetStateAction<boolean>>;
 }) => {
   const content =
-    "Gửi tới Cậu! một thiên thần nhỏ đước gửi xuống thế giới này 😍. Thời gian vừa qua mệt lắm có phải không? Nhưng không sao đâu nè, vẫn còn mình ở đây, mình sẽ trò chuyện với Cậu, làm Cậu vui vẻ hơn, kết thúc một ngày của Cậu với những nụ cười 😄. Chào mừng Cậu quay trở lại với cuộc sống hồn nhiên và đầy màu sắc này nhé. Mình mong Cậu luôn luôn vui vẻ và hạnh phúc 👩‍❤️‍👨, chúc Cậu có người đón đưa, kề cạnh và chăm sóc, tay phải đeo nhẫn, tay trái cầm hoa, miệng cười hồn nhiên, hoa sẽ vì Cậu mà e thẹn, nắng sẽ vì Cậu mà lu mờ và chúc Cậu sớm có được mình 🤣. Mong là chúng ta có thể đồng hành cùng nhau tiếp những chặng đường phía trước nha👫.";
+    "Gửi tới Em! một thiên thần nhỏ đước gửi xuống thế giới này 😍. Thời gian vừa qua mệt lắm có phải không? Nhưng không sao đâu nè, vẫn còn Anh ở đây, Anh sẽ trò chuyện với Em, làm Em vui vẻ hơn, kết thúc một ngày của Em với những nụ cười 😄. Hôm nay là ngày 27/2, chào mừng Em quay đến với cuộc sống hồn nhiên và đầy màu sắc này nhé. Anh mong Em luôn luôn vui vẻ và hạnh phúc 👩‍❤️‍👨, miệng cười hồn nhiên, hoa sẽ vì Em mà e thẹn, nắng sẽ vì Em mà lu mờ, không chúc em giàu sang, chỉ chúc em bớt đi những muộn phiền. Mong là chúng ta có thể đồng hành cùng nhau tiếp những chặng đường phía trước nhá👫, yêu em 🥰";
 
   const [text, setText] = useState("");
   const [numb, setNumb] = useState(0);
@@ -36,11 +36,12 @@ export const ModalCenter = ({
               <div className="absolute inset-0 md:top-10 flex flex-col items-center justify-evenly h-full w-full">
                 <div className="block md:hidden">
                   <Image
-                    src={"/images/avatar.png"}
+                    src={"/images/avatar.jpg"}
                     width={100}
                     height={100}
                     alt="heart"
                     loading="eager"
+                    className="rounded-full"
                   />
                 </div>
                 <Image
