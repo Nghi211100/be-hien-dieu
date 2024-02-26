@@ -16,7 +16,7 @@ export default function Home() {
   const [showImage, setShowImage] = useState(false);
   const [time, setTime] = useState(0);
   return (
-    <main className="flex h-screen overflow-hidden relative flex-col items-center gap-6 p-2 md:p-24 bg-[url('/images/background.jpg')] bg-no-repeat bg-cover font-mon text-xl">
+    <main className="relative z-0 flex h-screen overflow-hidden flex-col items-center gap-6 p-2 md:p-24 bg-[url('/images/background.jpg')] bg-no-repeat bg-cover font-mon text-xl">
       <Header />
       <Audio />
       <div className="md:pt-[calc(100vh*1/6)]">
@@ -47,7 +47,7 @@ export default function Home() {
       <ModalImage show={showImage} setShow={setShowImage} />
       <Footer />
       <Name />
-      <div className="fixed inset-0 w-screen h-screen opacity-5 blur-sm">
+      <div className="fixed inset-0 w-screen h-screen opacity-5 blur-sm -z-10">
         <Image src={"/images/25.jpg"} layout="fill" objectFit="center" alt="" />
       </div>
     </main>
