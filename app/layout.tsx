@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { Dancing_Script, Inter } from "next/font/google";
 import "./globals.css";
+import { TITLE_OG } from "@/utils/common";
 
 const dancing = Dancing_Script({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
-  title: "Bé Út - Cục cứt của anh ❤️",
+  title: `${TITLE_OG} ❤️`,
   description: "Welcome to my life",
 };
 
